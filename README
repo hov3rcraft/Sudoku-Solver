@@ -1,0 +1,3 @@
+Windows users can run the .exe without installing anything.
+
+OS X and Linux users need Ruby and the Ruby-Gem 'Gosu'. Run 'main.rb'.
