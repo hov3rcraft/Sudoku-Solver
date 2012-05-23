@@ -7,16 +7,16 @@ class Solver_Window < Window
   def initialize
     super(570, 700, false)
 	self.caption = "Sudoku Solver"
-	s_array		 = [nil, nil, nil, nil, nil, nil, 2  , 6  , 8  ,
-					5  , nil, 6  , nil, nil, nil, nil, nil, nil,
-				    nil, nil, nil, 3  , 6  , 4  , nil, nil, nil,
-				    nil, 5  , nil, 4  , nil, 7  , nil, 2  , nil,
-				    2  , 1  , nil, 6  , nil, nil, nil, nil, 4  ,
-				    nil, 4  , nil, nil, nil, 5  , nil, nil, 3  ,
-				    nil, nil, nil, nil, nil, nil, 8  , 7  , 6  ,
-				    nil, nil, nil, 7  , 1  , nil, nil, nil, nil,
-				    4  , nil, 9  , nil, nil, nil, nil, nil, nil]
-	@sudoku      = Sudoku.new(s_array)
+	#s_array		 = [nil, nil, nil, nil, nil, nil, 2  , 6  , 8  ,
+    #         			5  , nil, 6  , nil, nil, nil, nil, nil, nil,
+	# For  			    nil, nil, nil, 3  , 6  , 4  , nil, nil, nil,
+	# Development	    nil, 5  , nil, 4  , nil, 7  , nil, 2  , nil,
+	#   			    2  , 1  , nil, 6  , nil, nil, nil, nil, 4  ,
+	#   			    nil, 4  , nil, nil, nil, 5  , nil, nil, 3  ,
+	#   			    nil, nil, nil, nil, nil, nil, 8  , 7  , 6  ,
+	#   			    nil, nil, nil, 7  , 1  , nil, nil, nil, nil,
+	#   			    4  , nil, 9  , nil, nil, nil, nil, nil, nil]
+	@sudoku      = Sudoku.new
     @background  = Image.new(self, "background.png", false)
     @menu_bar1   = Image.new(self, "menu_bar1.png", false)
     @menu_bar2   = Image.new(self, "menu_bar2.png", false)
